@@ -59,7 +59,7 @@ public class HeroKnightBehaviour : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontalMovement * 5f, rb.linearVelocity.y);
     }
 
-    // Zamienić na handler tak jak w MoveAction
+    // Zamienić na delegate tak jak w MoveAction
     private void Jump()
     {
         rb.AddForceAtPosition(new Vector3(0, 5f, 0), Vector3.up, ForceMode2D.Impulse);
